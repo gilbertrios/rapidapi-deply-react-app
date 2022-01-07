@@ -16,7 +16,7 @@ function App() {
     setError(false)
 
     //make edit to redeploy
-    axios.post('/api/weather', { location })
+    axios.post('/api/route', { location })
       .then((data) => {
         setTempC(data.tempC)
         setTempF(data.tempF)
